@@ -16,30 +16,22 @@ captions. Also  an attention module is used to focus on more related parts of im
 have relatively more impact on generating captions.
 
 # Preprocessing 
-Images are downloaded from different url's and they are resized to dimension (299,299,3).Dimension (299,299,3) is chosen due to the
-requirements of InceptionV3. While resizing images a method used which is called inter area, it is resampling using pixel
-area relation.Since an image have multiple captions, a single image entered to network multiple times.
-Thus image augmentation used on some images to create modified versions of them. To have
-robustness against different kinds of images. Some of the augmentation techniques used are,
-adding gaussian noise, contrast normalization, %50 flipping and etc.
 
+- Resizing images with inter area interpolation to dimension (299,299,3), it is resampling using pixel
+area relation
+- Image augmentation to have robustness against different kinds of images.Some of the augmentation techniques used are,
+adding gaussian noise, contrast normalization, %50 flipping and etc.
 
 # Model Architecture
 ![image](https://user-images.githubusercontent.com/17252665/90516537-ce2d1500-e16c-11ea-92d1-57194d50d39a.png)
 figure 1
 
-Model has 2 main parts: Recurrent Neural Network (LSTM) and Convolutional Neural
-Network (InceptionV3). CNN part is used for feature extraction and LSTM is used to learn
-relation between images and corresponding captions by combining both semantic and visual
-features which will be described in detail in next chapters. 
 
-As seen from figure 1 an image first enters to the pretrained model of
-inception-v3,then it passes a dense and relu layer. CNN module finishes after this, then
-output of cnn enters into attention module, with cell state and hidden state of LSTM at time
-(t-1). In the attention module, as seen from figure 8 , three dense layers used one for cnn
-output,the other two are for for hidden state and cell state of lstm. Then those layers summed
-and entered to tanh and then this result entered to softmax and multiplied with cnn output.
-The resultant output vector can be called context vector.
+Model has 3 main parts:
+- Recurrent Neural Network (LSTM) 
+- Convolutional Neural Network (InceptionV3)
+- Attention Module
+
 
 
 # Optimization, Network 
