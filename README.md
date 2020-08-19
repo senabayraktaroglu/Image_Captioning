@@ -73,3 +73,11 @@ Sample results of the project when hyperparameters are:
 - embedding_dim = 200
 - with attention
 
+
+![image](https://user-images.githubusercontent.com/17252665/90626398-97fe9c80-e223-11ea-8af3-da9b57ac2df8.png)
+![image](https://user-images.githubusercontent.com/17252665/90626407-9a60f680-e223-11ea-8451-fe6ece118999.png)
+![image](https://user-images.githubusercontent.com/17252665/90626411-9c2aba00-e223-11ea-982f-45112b3aff28.png)
+![image](https://user-images.githubusercontent.com/17252665/90626418-9f25aa80-e223-11ea-9525-7d502f6088c0.png)
+![image](https://user-images.githubusercontent.com/17252665/90626423-a0ef6e00-e223-11ea-817d-b7ffbb5b8a0a.png)
+![image](https://user-images.githubusercontent.com/17252665/90626473-ae0c5d00-e223-11ea-982d-03a1dd98436a.png)
+
