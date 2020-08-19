@@ -16,8 +16,8 @@ captions. Also  an attention module is used to focus on more related parts of im
 have relatively more impact on generating captions.
 
 
-# Model 
-
+# Model Architecture
+![image](https://user-images.githubusercontent.com/17252665/90516537-ce2d1500-e16c-11ea-92d1-57194d50d39a.png)
 
 
 # Results 
