@@ -42,7 +42,7 @@ and entered to tanh and then this result entered to softmax and multiplied with 
 The resultant output vector can be called context vector.
 
 
-# Optimization, Network AND Training hyperparameters
+# Optimization, Network 
 
 - Network  is trained with gradient descent algorithm.
 
@@ -52,16 +52,24 @@ function of Keras module,
 
 - Categorical Cross Entropy Loss is used for loss function because it is well-suited for the classification tasks with large number of classes.
 
-# Results 
+# Training Hyperparameters
 
 As the main architecture, figure 8 is used however architecture’s performance is evaluated
 with different hyperparameters. 
 Hyperparameters that are changed in the model are:
 
--Embedding dimension 
--Lstm hidden state dimension 
+- Embedding dimension 
+- Lstm hidden state dimension 
 - A new architecture without using
 attention. 
+
 While trying different hyperparameters, train set, validation set, test set initialized
 as same, optimizer and loss function kept same.
+
+# Samples of the project 
+
+Sample results of the project when hyperparameters are:
+- lstm state dimension= 500
+- embedding_dim = 200
+- with attention
 
